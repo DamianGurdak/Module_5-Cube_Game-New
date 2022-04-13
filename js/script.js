@@ -68,7 +68,7 @@ console.log("Gracz wpisał: " + playerInput);
 /////////////////////////////////////////////////////
 
 // let playerMove = "nieznany ruch"; zmeniam ponizej deklaracje zmiennej
-let playerMove = getMoveName(randomNumber);
+let playerMove = getMoveName(playerInput);
 
 // if (playerInput == "1") {
 // 	playerMove = "kamień";
@@ -80,4 +80,4 @@ let playerMove = getMoveName(randomNumber);
 
 printMessage("Gracz: Twój ruch to: " + playerMove);
 
-displayResult();
+displayResult(playerMove, computerMove);
