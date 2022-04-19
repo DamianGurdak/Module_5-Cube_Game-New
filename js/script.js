@@ -41,11 +41,11 @@ function playGame(playerInput) {
 		}
 	}
 
-	function printMessage(msg) {
-		let div = document.createElement("div");
-		div.innerHTML = msg;
-		document.getElementById("messages").appendChild(div);
-	}
+	// function printMessage(msg) {
+	// 	let div = document.createElement("div");
+	// 	div.innerHTML = msg;
+	// 	document.getElementById("messages").appendChild(div);
+	// }
 
 	let randomNumber = Math.floor(Math.random() * 3 + 1);
 
