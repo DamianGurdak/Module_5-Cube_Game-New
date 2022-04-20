@@ -5,5 +5,5 @@ function printMessage(msg) {
 }
 
 function clearMessages() {
-	document.getElementById("buttons").innerHTML = "";
+	document.getElementById("messages").innerHTML = "";
 }

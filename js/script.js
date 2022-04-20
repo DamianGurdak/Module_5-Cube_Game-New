@@ -41,12 +41,7 @@ function playGame(playerInput) {
 		}
 	}
 
-	// function printMessage(msg) {
-	// 	let div = document.createElement("div");
-	// 	div.innerHTML = msg;
-	// 	document.getElementById("messages").appendChild(div);
-	// }
-
+	clearMessages();
 	const randomNumber = Math.floor(Math.random() * 3 + 1);
 
 	/////////////////////////////////////////////////////
@@ -68,15 +63,17 @@ function playGame(playerInput) {
 	displayResult(computerMove, playerMove);
 }
 
-document.getElementById("play-rock").addEventListener("click", function () {
-	//printMessage("Wybrałeś pkamień"); nie jest zdefiniowa jak to zronic zeby wyswietlic
-	playGame("1");
-});
+document.getElementById("play-rock").addEventListener(
+	"click",
+	(function () {
+		playGame("1");
+	})()
+);
 document.getElementById("play-paper").addEventListener("click", function () {
-	//printMessage("Wybrałeś papier");
+	// printMessage("Wybrałeś papier");
 	playGame("2");
 });
 document.getElementById("play-scissors").addEventListener("click", function () {
-	//printMessage("Wybrałeś nożyce");
+	// printMessage("Wybrałeś nożyce");
 	playGame("3");
 });
